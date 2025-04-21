@@ -1,0 +1,179 @@
+/* Reset básico */
+.suporte-pagina {
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(to bottom right, #003366, #001f3f);
+    color: #fff;
+    padding: 2rem;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Hero */
+  .suporte-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .suporte-hero h1 {
+    font-size: 3rem;
+    color: #ffd700;
+    text-shadow: 1px 1px 10px #000;
+  }
+  
+  .suporte-hero p {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  /* Seções */
+  .suporte-secoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .faq, .formulario {
+    background: #002244;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+  }
+  
+  .faq h2, .formulario h2 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+  }
+  
+  .faq ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .faq li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Formulário */
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    color: #000;
+  }
+  
+  form button {
+    background-color: #ffd700;
+    color: #003366;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #e6c200;
+  }
+  
+  /* Contato */
+  .canais-contato {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .canais-contato h3 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+  }
+  
+/* Botão de ajuda */
+.botao-ajuda {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffd700;
+  color: #003366;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #ffd700aa;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-ajuda:hover {
+  background-color: #e6c200;
+  transform: scale(1.1);
+}
+
+.botao-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: 2px solid #ffd700;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.botao-voltar:hover {
+  background-color: #ffd700;
+  color: #003366;
+}
+
+
+  
+  /* Chat */
+  .chat-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 260px;
+    background-color: #001f3f;
+    color: white;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    padding: 1rem;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  
+  .chat-popup h4 {
+    margin: 0 0 0.5rem;
+    color: #ffd700;
+  }
+  
+  .chat-popup p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chat-popup input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+  }
+  

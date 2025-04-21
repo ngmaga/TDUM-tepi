@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Container principal */
+.dashboard-empreendedor {
+  max-width: 700px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.dashboard-empreendedor h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+/* Inputs e textarea */
+.dashboard-empreendedor input,
+.dashboard-empreendedor textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-empreendedor input:focus,
+.dashboard-empreendedor textarea:focus {
+  border-color: #004aad;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 74, 173, 0.2);
+}
+
+/* Área de texto */
+.dashboard-empreendedor textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Estilo para o input de arquivos */
+.dashboard-empreendedor input[type="file"] {
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #444;
+}
+
+.dashboard-empreendedor input[type="file"]::-webkit-file-upload-button {
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-empreendedor input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #00337a;
+}
+
+/* Botão de cadastrar serviço */
+.dashboard-empreendedor button {
+  width: 100%;
+  padding: 14px;
+  background-color: #004aad;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-empreendedor button:hover {
+  background-color: #00337a;
+}
+
+/* Mensagem de status */
+.mensagem-status {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.mensagem-status:empty {
+  display: none;
+}
+
+.mensagem-status::before {
+  content: "ℹ️ ";
+}
+
+.mensagem-status.success {
+  color: #007e33;
+  background-color: #ccffcc;
+}
+
+.mensagem-status.error {
+  color: #c62828;
+  background-color: #ffe6e6;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .dashboard-empreendedor {
+    padding: 30px 20px;
+    margin: 30px 10px;
+  }
+
+  .dashboard-empreendedor h2 {
+    font-size: 26px;
+  }
+
+  .dashboard-empreendedor input,
+  .dashboard-empreendedor textarea {
+    font-size: 15px;
+  }
+
+  .dashboard-empreendedor button {
+    font-size: 16px;
+  }
+}
+
+.mensagem-status {
+  margin-top: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mensagem-status.success {
+  background-color: #e6f9ed;
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+}
+
+.mensagem-status.error {
+  background-color: #ffeaea;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+}
+
