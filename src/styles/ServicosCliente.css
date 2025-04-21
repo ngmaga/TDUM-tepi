@@ -1,4 +1,3 @@
-/* Resetando margem e padding */
 * {
   margin: 0;
   padding: 0;
@@ -161,5 +160,11 @@ body {
   }
   .cards-container {
     grid-template-columns: 1fr;
+  }
+  .card-servico {
+    padding: 15px;
+  }
+  .card-servico img {
+    height: 150px;
   }
 }
