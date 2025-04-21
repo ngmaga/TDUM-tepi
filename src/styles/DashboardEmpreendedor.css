@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,6 @@ body {
   background-color: #f5f7fa;
 }
 
-/* Container principal */
 .dashboard-empreendedor {
   max-width: 700px;
   margin: 60px auto;
@@ -20,7 +18,6 @@ body {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Título */
 .dashboard-empreendedor h2 {
   text-align: center;
   font-size: 30px;
@@ -28,7 +25,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Inputs e textarea */
 .dashboard-empreendedor input,
 .dashboard-empreendedor textarea {
   width: 100%;
@@ -47,13 +43,11 @@ body {
   box-shadow: 0 0 8px rgba(0, 74, 173, 0.2);
 }
 
-/* Área de texto */
 .dashboard-empreendedor textarea {
   resize: vertical;
   min-height: 120px;
 }
 
-/* Estilo para o input de arquivos */
 .dashboard-empreendedor input[type="file"] {
   padding: 10px;
   border: none;
@@ -79,7 +73,6 @@ body {
   background-color: #00337a;
 }
 
-/* Botão de cadastrar serviço */
 .dashboard-empreendedor button {
   width: 100%;
   padding: 14px;
@@ -97,55 +90,6 @@ body {
   background-color: #00337a;
 }
 
-/* Mensagem de status */
-.mensagem-status {
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.mensagem-status:empty {
-  display: none;
-}
-
-.mensagem-status::before {
-  content: "ℹ️ ";
-}
-
-.mensagem-status.success {
-  color: #007e33;
-  background-color: #ccffcc;
-}
-
-.mensagem-status.error {
-  color: #c62828;
-  background-color: #ffe6e6;
-}
-
-/* Responsivo */
-@media screen and (max-width: 768px) {
-  .dashboard-empreendedor {
-    padding: 30px 20px;
-    margin: 30px 10px;
-  }
-
-  .dashboard-empreendedor h2 {
-    font-size: 26px;
-  }
-
-  .dashboard-empreendedor input,
-  .dashboard-empreendedor textarea {
-    font-size: 15px;
-  }
-
-  .dashboard-empreendedor button {
-    font-size: 16px;
-  }
-}
-
 .mensagem-status {
   margin-top: 20px;
   padding: 15px 20px;
@@ -161,6 +105,14 @@ body {
   margin-right: auto;
 }
 
+.mensagem-status:empty {
+  display: none;
+}
+
+.mensagem-status::before {
+  content: "ℹ️ ";
+}
+
 .mensagem-status.success {
   background-color: #e6f9ed;
   border: 1px solid #2ecc71;
@@ -173,3 +125,39 @@ body {
   color: #e74c3c;
 }
 
+@media screen and (max-width: 768px) {
+  .dashboard-empreendedor {
+    padding: 30px 20px;
+    margin: 30px 15px;
+  }
+
+  .dashboard-empreendedor h2 {
+    font-size: 24px;
+  }
+
+  .dashboard-empreendedor input,
+  .dashboard-empreendedor textarea {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .dashboard-empreendedor button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .dashboard-empreendedor input[type="file"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .dashboard-empreendedor input[type="file"]::-webkit-file-upload-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .mensagem-status {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+}
